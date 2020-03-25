@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vue Article Editor</title>
+        <link rel="stylesheet" href="/your-article-dist-path/article-editor.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script type="module" src="index.js"></script>
+    </head>
+    <body>
+        <h2>One Way Binding</h2>
+        <div id="app-one">
+            <article-editor v-model="content" :config="configOptions"></article-editor>
+            {{ content }}
+        </div>
+
+        <br>
+        <h2>Two Way Binding</h2>
+        <div id="app-two">
+            <article-editor v-model="content" :config="configOptions"></article-editor>
+            <textarea v-model="content"></textarea>
+        </div>
+    </body>
+</html>
