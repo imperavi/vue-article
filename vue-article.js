@@ -49,7 +49,7 @@ Vue.component('article-editor', {
             // extend config
             Vue.set(this.config, 'subscribe', subscribe);
 
-            // call Redactor
+            // call
             var app = ArticleEditor(this.$refs.article, this.config);
 
             // set instance
